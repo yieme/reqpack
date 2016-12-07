@@ -22,6 +22,5 @@
   },
   "author": "Do4, Inc.",
   "copyright": "Copyright (C) 2016, All Rights Reserved",
-  "license": "private",
-  "private": true
+  "license": "MIT"
 }
