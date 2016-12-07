@@ -1,0 +1,27 @@
+{
+  "name": "reqpack",
+  "description": "Reqpack",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "nsp": "NSP=$(type -p nsp); [ \"${NSP}\" != \"\" ] && nsp check",
+    "test": "node spec.js",
+    "dev": "nodemon index.js",
+    "patch": "npm run test && read -p 'Patch: ' M; npatch \"$M\" && git push origin master",
+    "minor": "npm run test && read -p 'Minor: ' M; nminor \"$M\" && git push origin master",
+    "major": "npm run test && read -p 'Major: ' M; nmajor \"$M\" && git push origin master",
+    "heroku": "git push heroku master",
+    "deploy": "npm run test && npm run heroku"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assert": "1.4.1"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "author": "Do4, Inc.",
+  "copyright": "Copyright (C) 2016, All Rights Reserved",
+  "license": "private",
+  "private": true
+}
