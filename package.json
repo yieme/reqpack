@@ -1,7 +1,7 @@
 {
   "name": "reqpack",
   "description": "Reqpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "nsp": "NSP=$(type -p nsp); [ \"${NSP}\" != \"\" ] && nsp check",
